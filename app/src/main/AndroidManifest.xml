@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.id.man.greatjobs">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.id.man.greatjobs.LamaranActivity" />
+        <activity android:name="com.id.man.greatjobs.TawaranActivity" />
+        <activity android:name="com.id.man.greatjobs.IklanActivity" />
+        <activity android:name="com.id.man.greatjobs.MainActivity" />
+        <activity android:name="com.id.man.greatjobs.SplashActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name="com.id.man.greatjobs.RekomendasiActivity"/>
+        <activity android:name="com.id.man.greatjobs.SignUpActivity"/>
+        <activity android:name="com.id.man.greatjobs.Tes1Activity"/>
+        <activity android:name="com.id.man.greatjobs.TestListActivity"/>
+
+        <!--
+       Here we specify that we want to send BOOT_COMPLETED to our
+       AutoStart class
+        -->
+    </application>
+
+</manifest>

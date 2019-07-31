@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.id.man.greatjobs.MainActivity"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <ImageView
+        android:layout_width="320px"
+        android:layout_height="320px"
+        android:layout_gravity="center"
+        android:paddingTop="20px"
+        android:src="@drawable/brand"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100px">
+
+        <Button
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:background="@drawable/btn1"
+            android:onClick="btn_1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20px">
+            <Button
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:background="@drawable/btn2"
+                android:onClick="btn_2"
+                android:layout_marginRight="10px"/>
+            <Button
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:background="@drawable/btn3"
+                android:onClick="btn_3"
+                android:layout_marginLeft="10px"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
